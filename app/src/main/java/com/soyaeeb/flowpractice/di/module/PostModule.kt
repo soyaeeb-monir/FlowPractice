@@ -1,14 +1,13 @@
 package com.soyaeeb.flowpractice.di.module
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import com.soyaeeb.flowpractice.service.PostApi
-import com.soyaeeb.flowpractice.ui.PostRepository
-import com.soyaeeb.flowpractice.ui.PostViewModel
+import com.soyaeeb.flowpractice.ui.date.PostRepository
+import com.soyaeeb.flowpractice.ui.date.PostViewModel
 import com.soyaeeb.flowpractice.utility.BASE_URL
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
@@ -34,7 +33,7 @@ class PostModule {
 
     @Singleton
     @Provides
-    fun providePostRepository(postApi: PostApi) : PostRepository{
+    fun providePostRepository(postApi: PostApi) : PostRepository {
         return PostRepository(postApi)
     }
 
