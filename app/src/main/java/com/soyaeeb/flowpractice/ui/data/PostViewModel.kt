@@ -1,7 +1,7 @@
-package com.soyaeeb.flowpractice.ui.date
+package com.soyaeeb.flowpractice.ui.data
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.soyaeeb.flowpractice.api_response.PostsUiState
+import com.soyaeeb.flowpractice.ui_state.PostsUiState
 import com.soyaeeb.flowpractice.ui.PostUiAction
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.*

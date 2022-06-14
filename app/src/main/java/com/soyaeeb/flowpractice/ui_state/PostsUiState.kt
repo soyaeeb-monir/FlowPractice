@@ -1,4 +1,4 @@
-package com.soyaeeb.flowpractice.api_response
+package com.soyaeeb.flowpractice.ui_state
 import com.soyaeeb.flowpractice.model.Posts
 
 sealed class PostsUiState{

@@ -1,19 +1,16 @@
 package com.soyaeeb.flowpractice.ui
 
-import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
-import com.google.android.material.snackbar.Snackbar
 import com.soyaeeb.flowpractice.adapter.PostAdapter
-import com.soyaeeb.flowpractice.api_response.PostsUiState
+import com.soyaeeb.flowpractice.ui_state.PostsUiState
 import com.soyaeeb.flowpractice.databinding.ActivityMainBinding
 import com.soyaeeb.flowpractice.model.Posts
-import com.soyaeeb.flowpractice.ui.date.PostViewModel
+import com.soyaeeb.flowpractice.ui.data.PostViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 import javax.inject.Inject

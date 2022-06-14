@@ -1,8 +1,8 @@
 package com.soyaeeb.flowpractice.di.module
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import com.soyaeeb.flowpractice.service.PostApi
-import com.soyaeeb.flowpractice.ui.date.PostRepository
-import com.soyaeeb.flowpractice.ui.date.PostViewModel
+import com.soyaeeb.flowpractice.ui.data.PostRepository
+import com.soyaeeb.flowpractice.ui.data.PostViewModel
 import com.soyaeeb.flowpractice.utility.BASE_URL
 import dagger.Module
 import dagger.Provides
