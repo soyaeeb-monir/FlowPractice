@@ -37,9 +37,4 @@ class PostModule {
         return PostRepository(postApi)
     }
 
-    @Singleton
-    @Provides
-    fun providePostViewModel(postRepository: PostRepository) : PostViewModel {
-        return PostViewModel(postRepository)
-    }
 }
